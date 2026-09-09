@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sesión 02</title>
+
+    <style>
+      body {
+        font-family: monospace;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#basicos">
+            <img
+              src="img/rainbow.png"
+              alt="rainbow logo"
+              height="48"
+              style="vertical-align: middle"
+            />Tags básicos
+          </a>
+        </li>
+        <li>
+          <a href="#boton"
+            ><img
+              src="img/rainbow.png"
+              alt="rainbow logo"
+              height="48"
+              style="vertical-align: middle"
+            />Button vs Div</a
+          >
+        </li>
+        <li>
+          <a href="#details"
+            ><img
+              src="img/rainbow.png"
+              alt="rainbow logo"
+              height="48"
+              style="vertical-align: middle"
+            />Details</a
+          >
+        </li>
+        <li>
+          <a href="#formulario"
+            ><img
+              src="img/rainbow.png"
+              alt="rainbow logo"
+              height="48"
+              style="vertical-align: middle"
+            />Formulario</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <h1>Sesión 02</h1>
+    <p>Bienvenido a la sesión 02</p>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <h2>Tags semánticos</h2>
+    <h3 id="basicos">Tags básicos</h3>
+    <p>
+      Los tags semánticos son aquellos que tienen un significado específico y
+      ayudan a estructurar el contenido de una página web. Algunos ejemplos de
+      tags semánticos son:
+    </p>
+    <ul>
+      <li>
+        <code>&lt;header&gt;</code>: Representa la cabecera de un documento o
+        sección.
+      </li>
+      <li>
+        <code>&lt;nav&gt;</code>: Representa un conjunto de enlaces de
+        navegación.
+      </li>
+      <li>
+        <code>&lt;main&gt;</code>: Representa el contenido principal de un
+        documento.
+      </li>
+      <li>
+        <code>&lt;article&gt;</code>: Representa un contenido independiente y
+        autocontenido.
+      </li>
+      <li>
+        <code>&lt;section&gt;</code>: Representa una sección genérica de un
+        documento.
+      </li>
+      <li>
+        <code>&lt;aside&gt;</code>: Representa contenido relacionado con el
+        contenido principal, pero que no es parte de él.
+      </li>
+      <li>
+        <code>&lt;footer&gt;</code>: Representa el pie de página de un documento
+        o sección.
+      </li>
+    </ul>
+
+    <h4>Ejercicio 1</h4>
+    <p>
+      El siguiente código HTML representa un blog con una estructura básica que
+      utiliza tags semánticos. El blog tiene un encabezado con el título "Mi
+      blog" y un menú de navegación con enlaces a "Inicio", "Artículos" y "Sobre
+      mí". A continuación, se muestran tres artículos con su título, contenido,
+      fecha y autor.
+    </p>
+
+    <a href="ejercicio1.html">Ver ejercicio 1</a>
+
+    <h3 id="boton">Div vs Button</h3>
+
+    <p>
+      Un boton ya soporta activación por teclado, enfoque, estado deshabilitado
+      y semántica esperada. Un div estilizado para parecer un botón no
+      proporciona ninguno de esos comportamientos automáticamente. Comience con
+      el elemento nativo que coincida con la acción. Agregue ARIA solo cuando
+      HTML no pueda expresar el significado requerido; ARIA no repara un modelo
+      de interacción
+    </p>
+
+    <a href="ejemplo-boton.html">Ver ejemplo de div vs button</a>
+
+    <h3 id="details">details</h3>
+
+    <p>
+      El elemento <code>&lt;details&gt;</code> es un elemento HTML que se
+      utiliza para crear un widget interactivo que permite a los usuarios
+      mostrar u ocultar información adicional. El contenido dentro del elemento
+      <code>&lt;details&gt;</code> se oculta de forma predeterminada y se puede
+      mostrar haciendo clic en el resumen o encabezado del elemento.
+    </p>
+
+    <a href="ejemplo-details.html">Ver ejemplo de details</a>
+
+    <h3 id="formulario">Formulario</h3>
+
+    <p>
+      Un formulario HTML es un conjunto de elementos que permiten a los usuarios
+      enviar información a un servidor web. Los formularios se utilizan para
+      recopilar datos de los usuarios, como nombres, direcciones de correo
+      electrónico, contraseñas, preferencias y otra información relevante.
+    </p>
+
+    <a href="ejemplo-formulario.html">Ver ejemplo de formulario</a>
+
+    <p>
+      Si bien podemos crear formularios sin usar la etiqueta &lt;form&gt;, es
+      recomendable usarla para una mejor estructura y accesibilidad.
+    </p>
+    <p>
+      En el siguiente ejemplo, se muestra un formulario sin la etiqueta
+      &lt;form&gt;. Aunque los campos de entrada están presentes, no hay una
+      forma de enviar los datos al servidor, no se valida la entrada del
+      usuario, y no se proporciona retroalimentación al usuario. Además, los
+      usuarios que utilizan tecnologías de asistencia pueden tener dificultades
+      para interactuar con el formulario.
+    </p>
+
+    <a href="ejemplo-formulario-sin-form.html"
+      >Ver ejemplo de formulario sin form</a
+    >
+
+    <h3 id="responsive media">Responsive media</h3>
+
+    <img
+      srcset="
+        img/Psyduck-100.webp   100w,
+        img/Psyduck-300.webp   300w,
+        img/Psyduck-600.webp   600w,
+        img/Psyduck-1200.webp 1200w
+      "
+      alt="Psyduck"
+      style="width: 100%"
+      src="img/Psyduck-600.webp"
+    />
+
+    <picture>
+      <!-- hasta 600px muestra esto -->
+      <source media="(max-width: 600px)" srcset="/img/400px-Magikarp.png" />
+      <!-- hasta 1200px muestra esto -->
+      <source
+        media="(max-width: 1200px)"
+        srcset="/img/Magikarp_en_la_primera_generación.png"
+        />
+      <!-- por encima de 1200px muestra esto -->
+      <img src="/img/400px-Magikarp.png" alt="Magikarp" style="width: 100%" />
+    </picture>
+    <picture>
+      <!-- hasta 600px muestra esto -->
+      <source media="(max-width: 600px)" srcset="/img/400px-Snorlax.png" />
+      <!-- hasta 1200px muestra esto -->
+      <source
+        media="(max-width: 1200px)"
+        srcset="/img/Snorlax_en_la_primera_generación.png"
+      />
+      <!-- por encima de 1200px muestra esto -->
+      <img src="/img/400px-Snorlax.png" alt="Snorlax" style="width: 100%" />
+    </picture>
+
+    <h3>Video</h3>
+
+    <video
+    style="opacity:0.4; width:100%; position:fixed; inset: 0; height: 100vh; z-index: -1; object-fit: cover "
+    autoplay muted loop >
+      <source src="video/video.mp4" type="video/mp4" />
+      <source src="video/video.webm" type="video/webm" />
+      <source src="video/video.ogv" type="video/ogg" />
+      Tu navegador no soporta el elemento de video.
+    </video>
+
+    <audio style="width: 100%">
+      <source src="audio/audio.mp3" type="audio/mpeg" />
+      <source src="audio/audio.ogg" type="audio/ogg" />
+      Tu navegador no soporta el elemento de audio.
+    </audio>
+  </body>
+</html>

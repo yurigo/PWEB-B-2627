@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo formulario sin form</title>
+
+    <style>
+      body {
+        font-family: monospace;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="/">volver al inicio</a>
+      <h1>
+        Ejemplo de formulario
+        <mark
+          ><strong
+            ><em>SIN <small>&lt;form&gt;</small></em></strong
+          ></mark
+        >
+      </h1>
+    </header>
+    <main>
+      <code>
+        <pre></pre>
+      </code>
+
+      <input type="hidden" name="csrf_token" value="1234567890abcdef" />
+
+      <label for="text">Texto:</label>
+      <input type="text" id="text" name="text" required /><br /><br />
+
+      <label for="text2">Otro texto:</label>
+      <input
+        type="text"
+        id="text2"
+        name="text2"
+        disabled
+        required
+      /><br /><br />
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" /><br /><br />
+
+      <label for="email">Correo electrónico:</label>
+      <input
+        type="text"
+        autocomplete="email"
+        id="email"
+        name="email"
+      /><br /><br />
+
+      <label for="number">Número:</label>
+      <input type="number" id="number" name="number" /><br /><br />
+
+      <label for="date">Fecha:</label>
+      <input type="date" id="date" name="date" /><br /><br />
+
+      <label for="color">Color:</label>
+      <input type="color" id="color" name="color" /><br /><br />
+
+      <label for="file">Archivo:</label>
+      <input type="file" id="file" name="file" /><br /><br />
+
+      <label for="range">Rango:</label>
+      <input
+        type="range"
+        id="range"
+        name="range"
+        min="0"
+        max="100"
+      /><br /><br />
+
+      <fieldset>
+        <legend>Pokemon inicial</legend>
+
+        <input
+          type="radio"
+          id="pokemon-bulbasaur"
+          name="pokemon-inicial"
+          value="bulbasaur"
+        />
+        <label for="pokemon-bulbasaur">Bulbasaur</label>
+        <input
+          type="radio"
+          id="pokemon-charmander"
+          name="pokemon-inicial"
+          value="charmander"
+        />
+        <label for="pokemon-charmander">Charmander</label>
+        <input
+          type="radio"
+          id="pokemon-squirtle"
+          name="pokemon-inicial"
+          value="squirtle"
+        />
+        <label for="pokemon-squirtle">Squirtle</label>
+      </fieldset>
+      <br /><br />
+
+      <fieldset>
+        <legend>Género</legend>
+
+        <input type="radio" id="gender-male" name="gender" value="male" />
+        <label for="gender-male">Masculino</label>
+        <input type="radio" id="gender-female" name="gender" value="female" />
+        <label for="gender-female">Femenino</label>
+        <input type="radio" id="gender-other" name="gender" value="other" />
+        <label for="gender-other">Otro</label>
+      </fieldset>
+      <br /><br />
+
+      <label for="subscribe">Suscribirse al boletín</label>
+      <input type="checkbox" id="subscribe" name="subscribe" value="yes" />
+      <br /><br />
+
+      <fieldset>
+        <legend>Tu pokemon favorito</legend>
+        <ul>
+          <li>
+            <input
+              type="checkbox"
+              id="magikarp"
+              name="pokemon-favorito"
+              value="magikarp"
+            />
+            <label for="magikarp">
+              <img
+                src="img/Magikarp_en_la_primera_generación.png"
+                alt="magikarp"
+                height="50"
+              />
+              Magikarp
+            </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="psyduck"
+              name="pokemon-favorito"
+              value="psyduck"
+              checked
+            />
+            <label for="psyduck">
+              <img src="img/Psyduck.png" alt="psyduck" height="50" />
+              Psyduck
+            </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="snorlax"
+              name="pokemon-favorito"
+              value="snorlax"
+            />
+            <label for="snorlax">
+              <img src="img/400px-Snorlax.png" alt="snorlax" height="50" />
+              Snorlax
+            </label>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="slowpoke"
+              name="pokemon-favorito"
+              value="slowpoke"
+            />
+            <label for="slowpoke">
+              <img src="img/400px-Slowpoke.png" alt="slowpoke" height="50" />
+              Slowpoke
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <br /><br />
+
+      <label for="country">País:</label>
+      <select id="country" name="country">
+        <option value="mx">México</option>
+        <option value="us">Estados Unidos</option>
+        <option value="ca">Canadá</option>
+      </select>
+      <br /><br />
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea>
+      <br /><br />
+
+      <datalist id="browsers">
+        <option value="Chrome"></option>
+        <option value="Firefox"></option>
+        <option value="Internet Explorer"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+        <option value="Microsoft Edge"></option>
+      </datalist>
+
+      <label for="browser">Navegador:</label>
+      <input list="browsers" id="browser" name="browser" />
+      <br /><br />
+
+      <input type="submit" value="Enviar" />
+    </main>
+    <footer>
+      <p>&copy; 2026 Ejemplo de formulario. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+      // Agregar un evento de escucha al botón de envío
+      const submitButton = document.querySelector('input[type="submit"]');
+      submitButton.addEventListener("click", (event) => {
+        event.preventDefault(); // Evitar el envío del formulario
+
+        // tengo que acceder a los valores uno a uno...
+        const textValue = document.getElementById("text").value;
+        const passwordValue = document.getElementById("password").value;
+        const emailValue = document.getElementById("email").value;
+        const numberValue = document.getElementById("number").value;
+        const dateValue = document.getElementById("date").value;
+        const colorValue = document.getElementById("color").value;
+        const fileValue = document.getElementById("file").files[0];
+        const rangeValue = document.getElementById("range").value;
+
+        const gender = document.querySelector(
+          'input[name="gender"]:checked',
+        )?.value;
+        const pokemonInicial = document.querySelector(
+          'input[name="pokemon-inicial"]:checked',
+        )?.value;
+
+        const pokemon = document.querySelectorAll(
+          'input[name="pokemon-favorito"]:checked',
+        );
+        const selectedPokemons = Array.from(pokemon).map((p) => p.value);
+
+        const countryValue = document.getElementById("country").value;
+        const messageValue = document.getElementById("message").value;
+
+        const browserValue = document.getElementById("browser").value;
+        const subscribeValue = document.getElementById("subscribe").checked
+          ? "Sí"
+          : "No";
+
+        alert(
+          `Valores del formulario:
+  Texto: ${textValue}
+  Contraseña: ${passwordValue}
+  Correo electrónico: ${emailValue}
+  Número: ${numberValue}
+  Fecha: ${dateValue}
+  Género: ${gender}
+  Pokemon inicial: ${pokemonInicial}
+  Pokemon favorito: ${selectedPokemons.join(", ")}
+  País: ${countryValue}
+  Mensaje: ${messageValue}
+  Navegador: ${browserValue}
+  Suscribirse: ${subscribeValue}
+  Color: ${colorValue}
+  Archivo: ${fileValue ? fileValue.name : "Ninguno"}
+  Rango: ${rangeValue}`,
+        );
+
+        // tengo que borrar los elementos uno a uno, no hay un reset() porque no hay form...
+        document.getElementById("text").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("number").value = "";
+        document.getElementById("date").value = "";
+        document.getElementById("color").value = "#000000";
+        document.getElementById("file").value = "";
+        document.getElementById("range").value = "50";
+        document.getElementById("gender-male").checked = false;
+        document.getElementById("gender-female").checked = false;
+        document.getElementById("gender-other").checked = false;
+        document.getElementById("pokemon-bulbasaur").checked = false;
+        document.getElementById("pokemon-charmander").checked = false;
+        document.getElementById("pokemon-squirtle").checked = false;
+        document.getElementById("subscribe").checked = false;
+        document.getElementById("message").value = "";
+        document.getElementById("browser").value = "";
+      });
+    </script>
+  </body>
+</html>
