@@ -1,0 +1,96 @@
+:root{
+    --color-active: rgb(236, 179, 125);
+}
+
+body{
+
+background: #4995b3;
+background: linear-gradient(0deg,rgba(73, 149, 179, 1) 0%, rgba(17, 217, 100, 1) 26%, rgba(219, 92, 92, 1) 62%, rgba(237, 221, 83, 1) 100%);;
+}
+
+
+#a {
+}
+
+.selected {
+    border-width: 6px;
+}
+
+h1 {
+    background-color: red;
+}
+
+section {
+    color: rgb(183, 183, 183);
+}
+
+h2 {
+}
+
+.important {
+    /* border-color: gold;
+    border-width: 3px;
+    border-style: solid; */
+    border: 2px dashed gold;
+}
+
+
+#seccion6 {
+    background-color: orangered
+}
+
+h1,
+h2 {
+    font-size: 48px;
+    color: black;
+    padding: 40px;
+}
+
+section>h2 {
+    color: turquoise;
+}
+
+nav a:visited{
+    color:red;
+}
+
+nav a:hover{
+    background-color: yellow;
+    font-size: 30px;
+}
+
+
+.cta:focus-visible {
+    outline: 8px solid #e5eb25;
+}
+
+nav a:focus-visible{
+    outline: 100px dashed red;
+}
+
+input:invalid{
+    border-color: red;
+}
+
+li::marker{
+    color: yellow;
+    content: "🦄";
+}
+
+p::first-letter{
+    font-size: 100px;
+    color:red;
+}
+
+.espan {
+    font-size: 4em;
+    color: red;
+}
+
+.espan::before{
+    content: "·";
+}
+.espan::after{
+    content: "7";
+}
+
