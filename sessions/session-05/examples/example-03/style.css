@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #172554;
+  background: #f8fafc;
+  font: 1rem/1.5 system-ui, sans-serif;
+}
+
+main {
+  width: min(60rem, 100% - 2rem);
+  margin: 2rem auto;
+}
+
+section {
+  margin-block: 2rem;
+}
+
+.demo {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border: 2px dashed #64748b;
+  background: #e0f2fe;
+}
+
+.grow .item {
+  flex-basis: 10rem;
+  flex-shrink: 1;
+}
+
+.one,
+.three {
+  flex-grow: 1;
+}
+
+.two {
+  flex-grow: 2;
+}
+
+.shrink .item {
+  flex: 0 1 12rem;
+}
+
+.shrink .flexible {
+  min-inline-size: 0;
+  overflow-wrap: anywhere;
+}
+
+.item {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  background: #1d4ed8;
+}
+
+.fixed {
+  background: #475569;
+}
