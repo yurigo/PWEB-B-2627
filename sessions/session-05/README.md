@@ -47,6 +47,9 @@ Flexbox, pensado para un eje, con Grid, que organiza filas y columnas a la vez.
    espacio con `flex-grow`, `flex-shrink`, `flex-basis` y `min-inline-size`.
 4. [`example-04/index.html`](examples/example-04/index.html): patrón de interfaz
    con Flexbox anidado, `align-self` y adaptación a una pantalla estrecha.
+5. [`flex-box-101/index.html`](flex-box-101/index.html): proyecto construido en
+   clase, con una cabecera y una galería de tarjetas que usan Flexbox, `gap`,
+   `flex-wrap`, `flex` y `order`.
 
 ## Cómo practicar
 
@@ -56,3 +59,8 @@ recargar. Prueba `row` frente a `column`, `justify-content` frente a
 zoom y alarga los textos: el contenido debe seguir disponible y no desbordarse.
 Usa las herramientas de desarrollo del navegador para inspeccionar los ejes,
 las líneas flexibles y los tamaños calculados.
+
+Como práctica guiada, resuelve los niveles de
+[Flexbox Froggy](https://flexboxfroggy.com/#es) para aplicar
+`justify-content`, `align-items`, `flex-direction`, `flex-wrap` y otras
+propiedades de Flexbox en un entorno interactivo.
