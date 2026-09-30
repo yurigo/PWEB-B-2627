@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox: reparto de espacio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>¿Quién se queda el espacio?</h1>
+    <p>Compara las tres columnas: la proporción de crecimiento y el tamaño base cambian el resultado.</p>
+
+    <section aria-labelledby="reparto">
+      <h2 id="reparto">Crecimiento y tamaño inicial</h2>
+      <div class="demo grow">
+        <div class="item one">flex: 1 1 10rem</div>
+        <div class="item two">flex: 2 1 10rem</div>
+        <div class="item three">flex: 1 1 10rem</div>
+      </div>
+    </section>
+
+    <section aria-labelledby="reduccion">
+      <h2 id="reduccion">Reducción con contenido largo</h2>
+      <p>El elemento central permite reducir su tamaño y envolver palabras largas.</p>
+      <div class="demo shrink">
+        <div class="item fixed">Base 12rem</div>
+        <div class="item flexible">Este texto puede reducirse y envolverse: contenido-super-largo-para-probar</div>
+        <div class="item fixed">Base 12rem</div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox: interfaz anidada</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio">Aula web</a>
+    <nav aria-label="Navegación principal">
+      <a href="#recursos">Recursos</a>
+      <a href="#progreso">Progreso</a>
+      <a href="#ayuda">Ayuda</a>
+    </nav>
+  </header>
+
+  <main id="inicio" class="layout">
+    <aside>
+      <h2>En esta sesión</h2>
+      <ul>
+        <li><a href="#ejes">Ejes</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#progreso">Tu progreso</a></li>
+      </ul>
+    </aside>
+    <section class="content">
+      <div class="heading">
+        <div>
+          <p class="eyebrow">SESIÓN 05</p>
+          <h1>Diseña con Flexbox</h1>
+        </div>
+        <span class="status" id="progreso">En curso</span>
+      </div>
+      <p id="ejes">Combina contenedores flexibles para distribuir y alinear la interfaz en una dimensión.</p>
+      <div class="resource-list" id="recursos">
+        <article class="resource">
+          <div>
+            <h2>Comprende los ejes</h2>
+            <p>Relaciona la dirección con los ejes principal y transversal.</p>
+          </div>
+          <a href="#ayuda">Repasar</a>
+        </article>
+        <article class="resource">
+          <div>
+            <h2>Reparte el espacio</h2>
+            <p>Prueba crecer, reducir y establecer tamaños iniciales.</p>
+          </div>
+          <a href="#ayuda">Practicar</a>
+        </article>
+      </div>
+      <p id="ayuda">En pantallas estrechas, la navegación y las columnas pueden envolver.</p>
+    </section>
+  </main>
+</body>
+</html>

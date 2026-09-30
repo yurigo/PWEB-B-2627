@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox: ejes y alineación</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Flexbox: ejes y alineación</h1>
+    <p>En cada contenedor, identifica el eje principal antes de predecir la alineación.</p>
+
+    <section aria-labelledby="fila">
+      <h2 id="fila">Fila: eje principal horizontal</h2>
+      <div class="flex-container row">
+        <div class="item">Inicio</div>
+        <div class="item">Centro</div>
+        <div class="item">Final</div>
+      </div>
+      <p><code>justify-content: space-between</code> distribuye en el eje principal;
+        <code>align-items: center</code> alinea en el eje transversal.</p>
+    </section>
+
+    <section aria-labelledby="columna">
+      <h2 id="columna">Columna: ejes intercambiados</h2>
+      <div class="flex-container column">
+        <div class="item">Primero</div>
+        <div class="item">Segundo</div>
+        <div class="item">Tercero</div>
+      </div>
+      <p>Con <code>flex-direction: column</code>, la distribución principal ahora es vertical.</p>
+    </section>
+  </main>
+</body>
+</html>
