@@ -11,3 +11,4 @@ ejemplos correspondientes.
 3. [CSS: estilos y selectores](sessions/session-03/README.md)
 4. [CSS: box model](sessions/session-04/README.md)
 5. [CSS: Flexbox](sessions/session-05/README.md)
+6. [CSS Grid](sessions/session-06/README.md)
