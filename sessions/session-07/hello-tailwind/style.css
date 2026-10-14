@@ -1,0 +1,13 @@
+.display-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+body{
+    font-family: 'Noto Sans';
+}
+
+h1{
+    font-family: 'Lavishly Yours'
+}
