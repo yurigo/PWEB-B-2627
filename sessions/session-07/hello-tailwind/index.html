@@ -1,78 +1,37 @@
 <!doctype html>
-<html>
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Taller de diseño web</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="style.css">
-
 </head>
+<body class="min-h-screen bg-gray-50 text-gray-900">
+  <main class="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
+    <p class="text-sm font-semibold text-indigo-700">Aprende practicando</p>
+    <h1 class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Talleres de diseño web</h1>
+    <p class="mt-3 max-w-2xl text-gray-600">
+      Elige un taller y empieza a construir para la web.
+    </p>
 
-<body>
-  <h1 class="text-9xl font-bold m-3 p-5">
-    Hello world!
-  </h1>
-  <p class="text-center text-xl p-4">lorem ipsum</p>
-
-  <!-- From Uiverse.io by emmanuelh-dev -->
-  <div class="bg-gray-200 w-[90%] h-64 rounded-lg mx-auto">
-    <div class="flex p-2 gap-1">
-      <div class="">
-        <span
-          class="bg-blue-500 md:bg-pink-200 hover:bg-blue-800 hover:scale-125 cursor-pointer inline-block center w-3 h-3 rounded-full"></span>
-      </div>
-      <div class="circle">
-        <span class="bg-purple-500 hover:bg-purple-900 inline-block center w-3 h-3 rounded-full"></span>
-      </div>
-      <div class="circle">
-        <span class="bg-pink-500 box inline-block center w-3 h-3 rounded-full"></span>
-      </div>
-    </div>
-    <div class="card__content p-5">
-      <div
-      class="hover:scale-x-105 transition-all duration-300 *:transition-all *:duration-300 flex justify-start text-2xl items-center shadow-xl z-10 bg-[#e8e4df] dark:bg-[#191818] gap-2 p-2 rounded-full"
-    >
-      <button
-        class="before:hidden hover:before:flex before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:content-['Like'] before:bg-black dark:before:bg-white dark:before:text-black before:text-white before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 bg-white dark:bg-[#191818] rounded-full p-2 px-3"
-      >
-        👍
-      </button>
-      <button
-        class="before:hidden hover:before:flex before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:content-['Cheer'] before:bg-black dark:before:bg-white dark:before:text-black before:text-white before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 bg-white dark:bg-[#191818] rounded-full p-2 px-3"
-      >
-        👏🏻
-      </button>
-      <button
-        class="before:hidden hover:before:flex before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:content-['Celebrate'] before:bg-black dark:before:bg-white dark:before:text-black before:text-white before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 bg-white dark:bg-[#191818] rounded-full p-2 px-3"
-      >
-        🎉
-      </button>
-      <button
-        class="before:hidden hover:before:flex before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:content-['Appreciate'] before:bg-black dark:before:bg-white dark:before:text-black before:text-white before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 bg-white dark:bg-[#191818] rounded-full p-2 px-3"
-      >
-        ✨
-      </button>
-      <button
-        class="before:hidden hover:before:flex before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:content-['Smile'] before:bg-black dark:before:bg-white dark:before:text-black before:text-white before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 bg-white dark:bg-[#191818] rounded-full p-2 px-3"
-      >
-        🙂
-      </button>
-    </div>
-    </div>
-  </div>
-
-
-
-
+    <section class="mt-8 grid gap-4 md:grid-cols-2" aria-label="Talleres disponibles">
+      <article class="rounded-xl bg-white p-6 shadow-md">
+        <p class="text-sm font-semibold text-indigo-700">Principiante</p>
+        <h2 class="mt-2 text-xl font-bold">HTML semántico</h2>
+        <p class="mt-2 text-gray-600">Organiza el contenido con elementos que describen su significado.</p>
+        <a class="mt-5 inline-block rounded-lg bg-indigo-700 px-4 py-2 font-semibold text-white transition-colors hover:bg-indigo-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-700"
+           href="#inscripcion">Ver taller</a>
+      </article>
+      <article class="rounded-xl bg-white p-6 shadow-md">
+        <p class="text-sm font-semibold text-indigo-700">Intermedio</p>
+        <h2 class="mt-2 text-xl font-bold">CSS adaptable</h2>
+        <p class="mt-2 text-gray-600">Crea layouts que se ajustan a distintos tamaños de pantalla.</p>
+        <a class="mt-5 inline-block rounded-lg bg-indigo-700 px-4 py-2 font-semibold text-white transition-colors hover:bg-indigo-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-700"
+           href="#inscripcion">Ver taller</a>
+      </article>
+    </section>
+    <p id="inscripcion" class="mt-8 text-gray-600">¡Pronto habrá más información sobre las inscripciones!</p>
+  </main>
 </body>
-
 </html>
