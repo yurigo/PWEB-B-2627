@@ -1,0 +1,13 @@
+body {
+    font-family: monospace;
+    font-size: 16px;
+}
+
+button {
+    padding: 2em 1em;
+}
+
+.rojo {
+    background-color: red;
+    color: rgb(74, 0, 0);
+}
