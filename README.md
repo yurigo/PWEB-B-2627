@@ -13,3 +13,4 @@ ejemplos correspondientes.
 5. [CSS: Flexbox](sessions/session-05/README.md)
 6. [CSS Grid](sessions/session-06/README.md)
 7. [Frameworks CSS: Bootstrap y Tailwind CSS](sessions/session-07/README.md)
+8. [JavaScript 101: fundamentos y módulos](sessions/session-08/README.md)
