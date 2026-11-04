@@ -14,3 +14,4 @@ ejemplos correspondientes.
 6. [CSS Grid](sessions/session-06/README.md)
 7. [Frameworks CSS: Bootstrap y Tailwind CSS](sessions/session-07/README.md)
 8. [JavaScript 101: fundamentos y módulos](sessions/session-08/README.md)
+9. [JavaScript: DOM y eventos](sessions/session-09/README.md)
