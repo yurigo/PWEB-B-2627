@@ -1,0 +1,45 @@
+:root {
+    --text-color: rgb(252, 249, 252);
+}
+
+
+body {
+    font-family: monospace;
+    background-color: rgb(54, 41, 51);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+}
+
+.pokemones>.content {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pokemones .card {
+    padding: 1em;
+    border-radius: 5px;
+    border: 3px solid var(--text-color);
+}
+
+.pokemones .buttons {
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.no-data {
+    display: none;
+}
+
+main>img:first-child {
+    width: 96px;
+    aspect-ratio: 1/1;
+}
+
+.yuhu {
+    border: 3px solid gold
+}
